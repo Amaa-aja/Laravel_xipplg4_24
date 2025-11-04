@@ -12,6 +12,6 @@ Route::prefix('admin')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
 
     //untuk CRUD table student #PUNYA RAJA
-    Route::resource('student' , StudentController::class);
+    Route::resource('students', StudentController::class);
 
 });
